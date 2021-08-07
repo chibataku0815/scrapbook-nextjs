@@ -1,7 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 import Button from "config/theme/components/Button";
-import variants from "config/theme/variants";
 
 const fonts = { mono: `'Menlo', monospace` }
 
@@ -21,7 +20,6 @@ const theme = extendTheme({
   },
   fonts,
   breakpoints,
-  variants,
   icons: {
     logo: {
       path: (
