@@ -1,4 +1,5 @@
 import { DarkModeSwitch } from 'components/DarkModeSwitch'
+import { AuthModal } from 'components/Molecules/AuthModal'
 import { Container } from 'components/Molecules/Container'
 import { CTA } from 'components/Molecules/CTA'
 import { Hero } from 'components/Molecules/Hero'
@@ -7,8 +8,10 @@ import { Main } from 'components/Organisms/Main'
 
 const Index = () => (
   <Container height="100vh">
-    <Hero />
-    <Main></Main>
+    <Hero title="Scrap Book"/>
+    <Main>
+      <AuthModal></AuthModal>
+    </Main>
 
     <DarkModeSwitch />
     <Footer>

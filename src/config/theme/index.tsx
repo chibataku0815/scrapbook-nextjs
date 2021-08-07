@@ -1,5 +1,7 @@
-import { extendTheme } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import { extendTheme } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+import Button from "config/theme/components/Button";
+import variants from "config/theme/variants";
 
 const fonts = { mono: `'Menlo', monospace` }
 
@@ -11,11 +13,15 @@ const breakpoints = createBreakpoints({
 })
 
 const theme = extendTheme({
+  components:{
+    Button
+  },
   colors: {
     black: '#16161D',
   },
   fonts,
   breakpoints,
+  variants,
   icons: {
     logo: {
       path: (
